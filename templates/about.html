@@ -1,0 +1,60 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<!-- banner bottom -->
+    <section class="w3ls-bnrbtm py-5" id="about">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-md-5 mb-sm-4 mb-2 text-center font-weight-bold">About Us</h3>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <img src="/static/images/about.jpg" alt="about" class="img-fluid mt-4" />
+                </div>
+                <div class="col-lg-6 pr-xl-5 mt-4">
+                    <h3 class="title-sub mb-4">A School should be a place of Light, of Liberty and of Learning </h3>
+                    <p class="sub-para">TechSchool is a software development company based out of Trivandrum, Kerala.
+                       We help people and companies launch their next product idea or grow their business with secured, high speed, user centric,
+                        beautiful looking web and mobile applications.
+                        </p>
+                    <p class="sub-para pt-4 mt-4 border-top">We also have a software training division that prepares students for a career as a software developer.
+                       We offer a new kind of learning experience to students who really want to make a mark in the software industry.
+                        We help students launch amazing careers in software development.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner bottom -->
+
+    <!-- services -->
+    <div class="services py-5" id="what">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-xl-5 mb-sm-4 mb-2 text-center text-wh font-weight-bold">What We Do?</h3>
+            <div class="row w3pvtits-services-row text-center">
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-leanpub ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">Web Designing</h4>
+                        <p class="text-left">Our web designing experts would give that touch of elegance to your website, while not compromising on its functionality.</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="{% url 'admission:webdesign' %}">Read More<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-graduation-cap ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">App Development </h4>
+                        <p class="text-left">We take immense pride in saying that the mobile apps developed at Tech School are robust, agile and on-par with industry standards</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="{% url 'admission:appdevelopment' %}">Read More<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-users ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">software training</h4>
+                        <p class="text-left"> we've designed a unique educational program that help our students gain a deep, practical, understanding of each technology..</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="#">Read More<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //services -->
+{% endblock %}

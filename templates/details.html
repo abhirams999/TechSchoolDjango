@@ -1,0 +1,23 @@
+<!-- banner bottom -->
+{% extends 'base_layout.html' %}
+{% block content %}
+    <section class="w3ls-bnrbtm py-5" id="about">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-md-5 mb-sm-4 mb-2 text-center font-weight-bold">Profile</h3>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <img src="{{ details.profile.picture.url }}" alt="about" class="img-fluid mt-4" />
+                </div>
+                <div class="col-lg-6 pr-xl-5 mt-4">
+                    <h3 class="title-sub mb-4">{{ details.username }} </h3>
+                    <p class="sub-para">ADDRESS: {{ details.profile.address }}</p>
+                    <p class="sub-para">CONTACT: {{ details.profile.contact }}</p>
+                    <p class="sub-para">EMAIL: {{ details.email }}</p>
+                    <p class="sub-para">FEES-PAID: {{ details.profile.fees_paid }}</p>
+                    <p class="sub-para pt-4 mt-4 border-top"><a href="{% url 'delete' name=details.username %}" class="btn btn-warning">delete</a>     <a href="{% url 'students:update' details.id %}" class="btn btn-warning">update</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+    <!-- //banner bottom -->

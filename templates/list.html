@@ -1,0 +1,29 @@
+<!-- services -->
+{% extends 'base_layout.html' %}
+{% block content %}
+
+    <div class="services py-5" id="what">
+        <div class="container py-xl-5 py-lg-3">
+
+            <div class="row w3pvtits-services-row text-center">
+                {% csrf_token %}
+                {% for l in list %}
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+
+                        <img src="{{ l.picture.url }}" alt=" " class="img-fluid mt-5">
+                        <h4 class="text-bl my-4"><a href="{% url 'studentdetails' name=l.user.username %}">{{ l.user.username }}</a></h4>
+                        <p class="text-left">ADDRESS: {{ l.address }}</p>
+                        <p class="text-left">CONTACT: {{ l.contact }}</p>
+                        <p class="text-left">EMAIL: {{ l.user.email }}</p>
+                        <p class="text-left">fees-paid: {{ l.fees_paid }}</p>
+                        
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+  {% endblock %}
+    <!-- //services -->

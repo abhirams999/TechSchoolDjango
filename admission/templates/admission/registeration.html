@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<div class="container">
+  <h1>registeration form</h1>
+  <form class="registeration-form" action="{% url 'admission:registeration' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" name="" value="apply">
+  </form>
+
+
+</div>
+{% endblock %}

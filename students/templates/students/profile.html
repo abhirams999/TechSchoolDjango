@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<div class="container">
+  <h1>STUDENT PROFILE</h1>
+
+  <img src="{{ profile.picture.url }}" alt="student image">
+
+  <h2>NAME: {{ profile.user.username }}</h2>
+  <h5>ADDRESS: {{ profile.address }}</h5>
+  <h5>CONTACT: {{ profile.contact }}</h5>
+  <h5>EMAIL: {{ profile.user.email }}</h5>
+  <h5>fees-paid: {{ profile.fees_paid }}</h5>
+
+
+
+</div>
+{% endblock %}

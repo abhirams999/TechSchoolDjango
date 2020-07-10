@@ -1,0 +1,53 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<div class="gallery-cont text-center pb-5" id="gallery">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-bl font-weight-bold">Our Courses</h3>
+            <div class="row news-grids text-center no-gutters">
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/laravel-fullstack.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/spring.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/rails.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="row news-grids text-center no-gutters">
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/html.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/css.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/bootstrap.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="row news-grids text-center no-gutters">
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/php.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/python.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/c-sharp.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="row news-grids text-center no-gutters">
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/django.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/NET.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="{% url 'students:signup' %}"><img src="/media/expressjs.jpg" alt="Gallery Image" class="img-fluid"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

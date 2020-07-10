@@ -1,0 +1,28 @@
+<!-- apps -->
+{% extends 'base_layout.html' %}
+{% block content %}
+   <div class="apps_w3w3pvt bg-li py-5" id="apps">
+       <div class="container py-xl-5 py-lg-3">
+           <h3 class="title-w3 mb-2 text-center text-bl font-weight-bold">are you sure you want to delete {{ student.username }}</h3>
+           <form class="delete-form" method="post">
+          {% csrf_token %}
+
+           <ul class="list-unstyled apps-lists text-center pt-sm-4">
+               <li>
+                   <input type="submit" name="yes" value="yes" class="btn_apt btn btn-danger">
+
+               </li>
+               <li class="mx-sm-3 my-sm-0 my-3">
+                   <input type="submit" name="no" value="no" class="btn_apt btn btn-success">
+
+               </li>
+
+           </ul>
+           </form>
+       </div>
+       <div class="img-podi-w3ls">
+           <span class="fa fa-leanpub"></span>
+       </div>
+   </div>
+{% endblock %}
+   <!-- //apps -->
